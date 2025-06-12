@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>StupeflipCraft</title>
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.png">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script src="./src/scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./src/images/logo.webp" alt="stupLogo">
+        </div>
+        <nav>
+            <ul class="buttons">
+                <li class="button accueil">
+                    <a href="#">accueil</a>
+                </li>
+                <li class="button reglement">
+                    <a href="#">règlement</a>
+                </li>
+                <li class="button wiki">
+                    <a href="#">wiki</a>
+                </li>
+                <li class="button medias">
+                    <a href="#">médias</a>
+                </li>
+                <li class="button internet">
+                    <a href="#">internet</a>
+                </li>
+                <li class="button rejoindre">
+                    <a href="#">rejoindre</a>
+                </li>
+                <li class="button equipe">
+                    <a href="#">l'équipe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>StupeflipCraft</h1>
+        <p class="sous-titre">serveur minecraft Java 1.18.2</p>
+        <section id="accueil">
+            <h2 id="titre">Accueil</h2>
+            <div id="server-status">Chargement...</div>
+            <button class="join" onclick="copierTexte()">Clique ici pour copier l'IP du serveur</button>
+            <p id="message"></p>
+            <div id="news-container"><h2>Les news</h2></div>
+        </section>
+
+        <section id="reglement">
+            <h2>Règlement</h2>
+            <ul>
+                <li>
+                    Les règles sont simples : <strong>bon sens, respect, courtoisie</strong>.
+                </li>
+                <li>
+                    Il est <strong>interdit d'utiliser des logiciels, des mods</strong> ou des versions de Minecraft modifiées qui permettent une aide quelconque. (Xray, fly...)
+                </li>
+                <li>
+                    Toute <strong>utilisation de bug</strong>, quel qu'il soit ( duplication, tp, etc ) est passible d'un clear et d'un ban. Vous êtes priés de signaler tout bug que vous trouvez, pour le bien du serveur. Le toit du nether sera considéré comme bug et donc réprimandable.
+                </li>
+                <li>
+                    Les <strong>tentatives de tpkill</strong>, ou n'importe quel autre système visant à tuer les autres joueurs sans son consentement, seront sanctionnés.
+                </li>
+                <li>
+                    Le vol et la détérioration (<strong>grief</strong>) sont interdits.
+                </li>
+                <li>
+                    <strong>Profiter des nouveaux joueurs</strong> (arnaques, abus de position dominante) vous expose à des sanctions.
+                </li>
+                <li>
+                    Toutes les <strong>constructions jugées non appropriées</strong> (à caractère sexuel, irrespectueux...), ainsi que les fermes générant anormalement des lags sont interdites
+                </li>
+                <li>
+                    Les seul mods qui peuvent être utilisés sont Litematica (sans print ni aide au placement) Optifine, Map et Minimap. Si vous avez un doute sur un mod, demandez à un admin si vous pouvez l’utiliser. Les farms sont autorisé dans les différents mondes.La redstone est autorisé avec modération. Les clocks sont par exemple interdites. Pour plus d'info demander au staff.
+                </li>
+                <li>
+                    Nous sommes là <strong>pour le fun et le Stupcrou</strong>. Si tu n'as pas l'esprit, on ne te retient pas. 
+                </li>
+                <li>
+                    A propos de règles délicates, je rajouterai celle-ci : évitez de tout donner aux nouveaux arrivants, ils viennent pour découvrir du contenu, pas rush le serv, laissez les découvrir avec le temps, ne leur donnez pas tout tout de suite. Biensûr vous etes invités à les accueillir cordialement en répondant à leurs questions et tout ça c'est encouragé.
+                </li>
+            </ul>
+        </section>
+
+        <section id="wiki">
+            <h2>Wiki</h2>
+            <h3>(cliquez sur l'article pour le dérouler)</h3>
+            <article>
+                <h3>Bien arriver</h3>
+                <div class="article_wiki">
+                    <p>Installez et lancez la version Minecraft JAVA 1.18.2</p>
+                    <p>Connectez vous à l'adresse IP stupeflipcraft.mine.fun <strong>en autorisant les resourcepacks servers</strong> dans la liste des serveurs.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Le monde Build</h3>
+                <div class="article_wiki">
+                    <p>Vous arrivez dans le monde de build, là où vous pourrez construire votre base.</p>
+                    <p>Lisez les règles puis rejoignez le game !</p>
+                    <p>Vous avez <a href="https://www.youtube.com/watch?v=rxuLIb9BrlQ&feature=youtu.be" target="_blank">ici un tuto vidéo</a> pour obtenir votre premier terrain gratuitement.</p>
+                    <p>En gros, il faut acheter un droit de propriété (/terrains puis définir le nombre de terrains voulus), ET ENSUITE acheter le terrain voulu (/acheter)</p>
+                </div>
+            </article>
+            <article>
+                <h3>Les autres mondes</h3>
+                <div class="article_wiki">
+                    <p>Les mondes ressources sont réinitialisés de temps en temps. Ils sont accessibles via les portails du spawn.</p>
+                    <p>Un monde d'éternelle nuit est lui plus difficilement accessible, en parlant à King Ju, en récupérant un crayon titi, et tuant un zombie avec ce crayon puis en tuant un Géant.</p>
+                    <p>D'autres mondes existent : le monde ForEver, le monde des 2 ans, ou encore Coldworld (qui était le premier monde de build historiquement)</p>
+                </div>
+            </article>
+            <article>
+                <h3>Les PNJ</h3>
+                <div class="article_wiki">
+                    <p>De nombreux PNJ se dispersent dans le monde build</p>
+                    <p>Pensez à parler avec eux ! Ils vous téléporteront, vous vendront ou achèteront des ressources, ils vous venderont de nouveaux grades, ainsi que des items uniques !</p>
+                </div>
+            </article>
+            <article>
+                <h3>La Touhave</h3>
+                <div class="article_wiki">
+                    <p>Des panoplies et armes nouvelles sont confectionnables à partir de la ressource touhave.</p>
+                    <p>La touhave se trouve entre les couches 1 et 25 du monde ressources.</p>
+                    <p>Les recettes sont exposées au spawn.</p>
+                    <p>Chaque panoplie/arme nécessite dans sa recette l'item de la panoplie/arme précédente.</p>
+                    <p>Dans l'ordre, vous pouvez fabriquer : la panoplie redstone, puis magmatique, puis solaire, vitale, spirituelle, céleste, divine et obscure.</p>
+                    <p>La panoplie (recette cachée) de lapin vient s'ajouter à cette liste...</p>
+                </div>
+            </article>
+            <article>
+                <h3>La monnaie</h3>
+                <div class="article_wiki">
+                    <p>Vous pouvez posséder jusqu'à 457.772 de monnaie maximum.</p>
+                    <p>Différentes solutions s'offrent à vous pour gagner de l'argent.</p>
+                    <p>Vous pouvez faire des quêtes quotidiennes (/jobs quests) qui paient plutôt bien.</p>
+                    <p>Vous pouvez revendre des ressources aux PNJ, ou à l'hotel des ventes (/ah sell [lePrix]) ou encore aux magasins des autres joueurs.</p>
+                    <p>Vous pourrez créer vos propres magasins chez vous une fois votre base reliée au spawn par le cheval de téléportation.</p>
+                </div>
+            </article>
+            <article>
+                <h3>les mobs custom</h3>
+                <div class="article_wiki">
+                    <p>Les mondes ressources sont habités par des monstres custom plus coriaces que la moyenne.</p>
+                    <p>Ils se repèrent facilement grâce à leur nom au dessus de leur tête.</p>
+                    <p>On peut compter parmi eux les Zombizars, Zombipolaires, Zombidons, Zombidasses, Zombiodégradables, Skelexpulsion, Skelectrik, Skelementaires.</p>
+                    <p>Des boss plus costauds encore, auront une barre de vie qui s'affichera, si vous n'êtes pas bien stuffés, fuyez !</p>
+                    <p>Parmi ces boss on compte le Bizon Futé, le Roi Skel, l'Argémione ou encore l'Epouvantail.</p>
+                </div>
+            </article>
+            <article>
+                <h3>D'autres dangers</h3>
+                <div class="article_wiki">
+                    <p>De nombreux dangers vous attendent dans le monde ressources</p>
+                    <p>Effectivement, quelques catastrophes naturelles peuvent poser problème, ou vous apporter beaucoup de ressources !</p>
+                </div>
+            </article>
+            <article>
+                <h3>Liste des commandes</h3>
+                <div class="article_wiki">
+                    <lu>
+                        <li>commandes de base : <br/>
+                            /spawn pour retourner au spawn<br/>
+                            /graves pour trouver vos tombes (a un coût lors de la téléportation)<br/>
+                            /color suivi de la couleur choisie pour changer la couleur de votre pseudo<br/>
+                            liste des couleurs : black darkblue darkgreen darkaqua darkred darkpurple gold gray darkgray blue green aqua red lightpurple yellow white<br/>
+                            /phrase suivi de votre phrase pour ajouter une phrase qui apparaîtra quand on clique droit sur vous<br/>
+                            /jobs quests pour accomplir les quêtes quotidiennes
+                        </li>
+                        <li>commandes de terrains : <br/>
+                            /terrains pour choisir un nombre de parcelles à ajouter à votre liste de droits de terrains<br/>
+                            /acheter pour acheter le terrain où vous vous trouvez (une fois un droit de propriété acquis)<br/>
+                            /vendre pour vendre le terrain où vous vous  trouvez<br/>
+                            /ll addfriend nomDuJoueur pour ajouter un membre à votre terrain<br/>
+                            /ll addfriendall nomDuJoueur pour ajouter un membre à tous vos terrains<br/>
+                            /ll unfriend et /ll unfriendall nomDuJoueur pour retirer le membre<br/>
+                            /ll friends pour voir la liste des membres<br/>
+                            /ll manage pour gérer le terrain où vous vous trouvez<br/>
+                            /ll manageall pour gérer d'un coup tous vos terrains<br/>
+                            /ll map pour voir la carte des terrains qui vous entourent<br/>
+                            /ll sethome pour redéfinir votre ll home<br/>
+                            /ll home pour revenir à votre ll home
+                        </li>
+                        <li>commandes du shop : <br/>
+                            /ah pour voir les objets à l'hotel des ventes<br/>
+                            /ah sell lePrixDésiré en tenant les objets en main pour les mettre en vente
+                        </li>
+                        <li>commandes de téléportation : <br/>
+                            /tpa nomDuJoueur pour demande un tp vers un joueur<br/>
+                            /tpahere nomDuJoueur pour inviter un joueur à se tp à vous<br/>
+                            /tpaccept pour accepter le tp proposé<br/>
+                            /tpdeny si vous voulez refuser le tp
+                        </li>
+                        <li>commandes de homes : <br/>
+                            /sethome nomDuHome pour définir un home<br/>
+                            /home nomDuHome pour rejoindre un home<br/>
+                            /delhome nomDuHome pour supprimer un home
+                        </li>
+                    </lu>
+                </div>
+            </article>
+        </section>
+
+        <section id="medias">
+            <h2>Médias</h2>
+            <p>Présentation du serveur sur la page Youtube de <a href="https://www.youtube.com/@Velter-zl5ic" target="_blank">25 Velter 1979</a></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lCXR3r97gu0?si=7XTXh38CXJBzfYvZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="internet">
+            <h2>Internet</h2>
+            <p>Retrouve Stupeflipcraft sur l'internet !</p>
+            <a class="internets" href="https://www.youtube.com/playlist?list=PLcwf02p_59J1tam9Xxle3deKZwmxyKYeU" target="_blank">Youtube</a>
+            <a class="internets" href="https://discord.gg/Ay6hSKA4tw" target="_blank">Discord</a>
+        </section>
+
+        <section id="rejoindre">
+            <h2>Rejoindre</h2>
+            <p>Le serveur est un serveur Minecraft JAVA 1.18.2</p>
+            <button class="join" onclick="copierTexte()">Clique ici pour copier l'IP du serveur</button>
+            <a class="discord" href="https://discord.gg/Ay6hSKA4tw" target="_blank">rejoindre le discord</a>
+        </section>
+
+        <section id="equipe">
+            <h2>L'équipe</h2>
+            <p>Merci à tous ceux qui ont participé de près ou de loin à ce projet !</p>
+            <article>
+                <h3>hacecah - owner</h3>
+                <p>Initiateur et concepteur du projet, développeur, configurateur</p>
+            </article>
+            <article>
+                <h3>emmydymme - buildeuse</h3>
+                <p>Buildeuse du spawn du serveur, des maps events, arènes...</p>
+            </article>
+            <article>
+                <h3>ratonio - buildeur</h3>
+                <p>Builder du spawn du serveur, des maps events, arènes...</p>
+            </article>
+            <article>
+                <h3>les joueurs</h3>
+                <p>Un grand merci à tous ceux qui se connectent sur ce projet de quelque manière que ce soit !</p>
+            </article>
+        </section>
+    </main>
+	<footer>
+		<p>Site créé par <a href="https://hacecah.fr" target="_blank">Hacecah</a>, tous droits réservés</p>
+	</footer>
+</body>
+</html>

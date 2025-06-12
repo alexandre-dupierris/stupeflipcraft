@@ -1,0 +1,177 @@
+* {
+    font-family: monospace;
+    line-height: 2;
+
+}
+body {
+    background-color: rgb(211, 255, 255);
+    background-image: url(../images/stupspawn.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+#logo img{
+    margin-top: 100px;
+    width: 400px;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color:white;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    font-size: 1.5em;
+}
+a {
+    color: rgb(53, 53, 53);
+    font-weight: 900;
+    font-size: 1.4em;
+}
+p {
+    font-size: 1.1em;
+}
+button {
+    cursor: pointer;
+}
+.buttons {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 0;
+    padding: 20px;
+    border-radius: 25px 10px 25px 10px;
+    font-size: 0.8em;
+    list-style-type: none;
+    max-width: 100%;
+}
+.buttons a {
+    color: white;
+    padding: 10px;
+    border-radius: 25px 10px 25px 10px;
+}
+.buttons a:hover {
+    color: black;
+    background-color: white;
+}
+.sous-titre {
+    text-align: center;
+    color:white;
+}
+
+section[id] { 
+    display: none; 
+}
+.display { 
+    display: flex !important;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+section {
+    flex-direction: column;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.801);
+    border: 2px solid rgba(0, 0, 0, 0.269);
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    align-items: center;
+}
+#server-status {
+    text-align: center;
+}
+.join {
+    width: max-content;
+    border: 2px solid rgba(0, 0, 0, 0.269);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.join:hover {
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+.discord, .internets {
+    margin-top: 25px;
+
+}
+.discord:hover, .internets:hover {
+    color: rgb(105, 105, 105);
+}
+.news-item {
+    border: 2px solid rgba(0, 0, 0, 0.269);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+iframe {
+    border-radius: 50px 20px 50px 20px;
+    max-width: 90%;
+}
+#equipe {
+    align-items: start;
+}
+#equipe h2 {
+    width: 100%;
+    text-align: center;
+}
+#wiki h3 {
+    font-size: 1.2em;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: normal;
+}
+#wiki article {
+    width: 100%;
+    text-align: start;
+}
+#wiki article h3 {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px 5px 20px 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+.article_wiki {
+    display: none;
+}
+footer {
+    width: max-content;
+    padding: 5px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.719);
+    border: 2px solid rgba(0, 0, 0, 0.269);
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+    p {
+        font-size: 1em;
+    }
+}
